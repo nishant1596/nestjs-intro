@@ -4,7 +4,7 @@ import { AnotherService } from './another.service.js';
 @Controller('another')
 export class AnotherController {
     constructor(private anotherService: AnotherService) {}
-    @Get('another')
+    @Get()
     anotherRoute() {
        return this.anotherService.anotherRoute();
     }

@@ -9,7 +9,7 @@ export class UsersService {
     return `This action returns all users + ${this.adminService.test()}`;
   }
 
-  findOne(id: number, name: string, query?: {[key: string]: string}) {
+  findOne(name?: string, id?: number,  query?: any) {
     console.log('Query Params:', query?.age);
     return `This action returns a #${id} and ${name} user ${query?.age ? 'with age ' + query.age : ''}`;
   }

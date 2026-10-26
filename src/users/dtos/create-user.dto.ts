@@ -1,4 +1,5 @@
-import { IsEmail, IsString, Matches, MinLength } from "class-validator";
+import { IsEmail, IsOptional, IsString, Matches, MinLength } from "class-validator";
+import {ApiProperty, ApiPropertyOptional} from '@nestjs/swagger';
 
 export class CreateUserDto { 
 
@@ -7,6 +8,7 @@ export class CreateUserDto {
   firstName: string;
 
   @IsString()
+  @IsOptional()
   @MinLength(2, { message: 'Last name must be at least 3 characters long' })
   lastName: string;
 
