@@ -1,0 +1,3 @@
+GET http://localhost:3000/users/123/nishant?age=30
+Accept: application/json
+Content-Type: application/json
