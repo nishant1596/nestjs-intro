@@ -1,0 +1,1911 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [
+        {
+            "name": "AdminService",
+            "id": "injectable-AdminService-3a6c144ba41cb3dd6fc5f1d5a75cad2be2bf054992a707b3965958db62628b020030f6470915ac83a25a8a90453584f9c326f9850c7589b852ca4a8c8770bf98",
+            "file": "src/admin/admin.service.ts",
+            "coverageIgnore": false,
+            "properties": [
+                {
+                    "name": "a",
+                    "coverageIgnore": false,
+                    "defaultValue": "1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 5,
+                    "rawdescription": "\n"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "test",
+                    "coverageIgnore": false,
+                    "args": [],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 6,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@nestjs/common';\n\n@Injectable()\nexport class AdminService {\n    a = 1;\n    test() {\n        return ++this.a;\n    }\n}\n",
+            "extends": [],
+            "type": "injectable",
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "AdminModule",
+                        "type": "module"
+                    }
+                ],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "AnimalsService",
+            "id": "injectable-AnimalsService-73268505b964f76d849841c38a2614c951d8c08e635dcbd1e67fe0ec75aeead0a992b25ecd5ff6ef905b4bec9b7f53030a72928163fcec02a094b1bee13b47a1",
+            "file": "src/animals/animals.service.ts",
+            "coverageIgnore": false,
+            "properties": [],
+            "methods": [
+                {
+                    "name": "create",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "createAnimalDto",
+                            "type": "CreateAnimalDto",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 7,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "createAnimalDto",
+                            "type": "CreateAnimalDto",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "findAll",
+                    "coverageIgnore": false,
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": ""
+                },
+                {
+                    "name": "findOne",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "remove",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "update",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "updateAnimalDto",
+                            "type": "UpdateAnimalDto",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "updateAnimalDto",
+                            "type": "UpdateAnimalDto",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@nestjs/common';\nimport { CreateAnimalDto } from './dto/create-animal.dto.js';\nimport { UpdateAnimalDto } from './dto/update-animal.dto.js';\n\n@Injectable()\nexport class AnimalsService {\n  create(createAnimalDto: CreateAnimalDto) {\n    return 'This action adds a new animal';\n  }\n\n  findAll() {\n    return `This action returns all animals`;\n  }\n\n  findOne(id: number) {\n    return `This action returns a #${id} animal`;\n  }\n\n  update(id: number, updateAnimalDto: UpdateAnimalDto) {\n    return `This action updates a #${id} animal`;\n  }\n\n  remove(id: number) {\n    return `This action removes a #${id} animal`;\n  }\n}\n",
+            "extends": [],
+            "type": "injectable",
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "AnimalsModule",
+                        "type": "module"
+                    }
+                ],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "AnotherService",
+            "id": "injectable-AnotherService-bfc2ae5fa2e24a35a2312ce6f88f9fb94ca3a5143805d20d9205811e7531b6c371701e7dd86546128758f7f45f8714c5c48f5900d8dc1f829762a1616eeb2b0b",
+            "file": "src/another/another.service.ts",
+            "coverageIgnore": false,
+            "properties": [],
+            "methods": [
+                {
+                    "name": "anotherRoute",
+                    "coverageIgnore": false,
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 7,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@nestjs/common';\nimport { AdminService } from '../admin/admin.service.js';\n\n@Injectable()\nexport class AnotherService {\n    constructor(private adminService: AdminService) {}\n     anotherRoute(){\n            return `This is another route + ${this.adminService.test()}`;\n        }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "adminService",
+                        "type": "AdminService",
+                        "optional": false,
+                        "dotDotDotToken": false,
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 5,
+                "rawdescription": "\n",
+                "jsdoctags": [
+                    {
+                        "name": "adminService",
+                        "type": "AdminService",
+                        "optional": false,
+                        "dotDotDotToken": false,
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "type": "injectable",
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "AnotherModule",
+                        "type": "module"
+                    }
+                ],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "AppService",
+            "id": "injectable-AppService-b2fc36854345e1c993ed4f7398da6a9492a6a20e372597cc4a71b28ea58d7a195a4bf8d4d093c4035fd7b7fecb617f4efcf184aa46771d6c5d6144446eae486b",
+            "file": "src/app.service.ts",
+            "coverageIgnore": false,
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getHello",
+                    "coverageIgnore": false,
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 5,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@nestjs/common';\n\n@Injectable()\nexport class AppService {\n  getHello(): string {\n    return 'Hello World!';\n  }\n}\n",
+            "extends": [],
+            "type": "injectable",
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "AppModule",
+                        "type": "module"
+                    }
+                ],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "PostsService",
+            "id": "injectable-PostsService-54a9a9e53761464318ec4d49e499692848082ff5cb561ea781f0ebd5f2dcad8f6806cf24700bd879be3b51accf353ebdccba28e1911d9acb5acfe3113972cb92",
+            "file": "src/posts/posts.service.ts",
+            "coverageIgnore": false,
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@nestjs/common';\n\n@Injectable()\nexport class PostsService {}\n",
+            "extends": [],
+            "type": "injectable",
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "PostsModule",
+                        "type": "module"
+                    }
+                ],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "UsersService",
+            "id": "injectable-UsersService-38129582a259d6184b9d9340ec65b5aa3333551dc6e4464d5980d695c13dcd4bb600b69f0050a014f1dfa83ab044cf74da15254a3287dee57e2e21311aa50d7f",
+            "file": "src/users/users.service.ts",
+            "coverageIgnore": false,
+            "properties": [],
+            "methods": [
+                {
+                    "name": "findAll",
+                    "coverageIgnore": false,
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 8,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": ""
+                },
+                {
+                    "name": "findOne",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "optional": true,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": true,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "query",
+                            "type": "any",
+                            "optional": true,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "optional": true,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": true,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "query",
+                            "type": "any",
+                            "optional": true,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "remove",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@nestjs/common';\nimport { AdminService } from '../admin/admin.service.js';\n\n@Injectable()\nexport class UsersService {\n  constructor(private adminService: AdminService) {}\n\n  findAll() {\n    return `This action returns all users + ${this.adminService.test()}`;\n  }\n\n  findOne(name?: string, id?: number,  query?: any) {\n    console.log('Query Params:', query?.age);\n    return `This action returns a #${id} and ${name} user ${query?.age ? 'with age ' + query.age : ''}`;\n  }\n\n  remove(id: number) {\n    return `This action removes a #${id} user`;\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "adminService",
+                        "type": "AdminService",
+                        "optional": false,
+                        "dotDotDotToken": false,
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 5,
+                "rawdescription": "\n",
+                "jsdoctags": [
+                    {
+                        "name": "adminService",
+                        "type": "AdminService",
+                        "optional": false,
+                        "dotDotDotToken": false,
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "type": "injectable",
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "UsersModule",
+                        "type": "module"
+                    }
+                ],
+                "outgoing": []
+            }
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [
+        {
+            "name": "Animal",
+            "id": "class-Animal-21b9e573273b7fc5916cb044949a982a647b2c6eaa230d970d439f59379a0f040455b033529a62c72eab6e43464eab4a2c511d16aa729349257a24952c80d829",
+            "file": "src/animals/entities/animal.entity.ts",
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "export class Animal {}\n",
+            "displayName": "Animal",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "CreateAnimalDto",
+            "id": "class-CreateAnimalDto-8f631f1de6f363eb09c41aa28d6e9a88ae452aee61ab8b407cf3ee1818e4e66d34eba3fd5d63cf513ee39f7b218a32e0c3972d2feae46c044ddc9632181370c0",
+            "file": "src/animals/dto/create-animal.dto.ts",
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "export class CreateAnimalDto {}\n",
+            "displayName": "CreateAnimalDto",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "CreatePostDto",
+            "id": "class-CreatePostDto-0b6582f7e2d481bc2cddf0e0f4e78e6dc02349153c4246e9fbc86df50f8223d383e06f3d5fd799282d4364f61e25b35774df75bd928786aa85c5b96fb960fe53",
+            "file": "src/posts/dtos/posts.dto.ts",
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { IsEnum, IsOptional, IsString, MinLength, IsISO8601, IsNotEmpty, IsArray, ValidateNested } from 'class-validator';\nimport { PostStatus, PostType } from '../enums/posts.enum.js';\nimport { Type } from 'class-transformer';\n\nclass CreatePostMetaOptionsDto {\n  @IsNotEmpty()\n  @IsString()\n  key: string;\n\n  @IsNotEmpty()\n  @IsString()\n  value: string;\n}\n\nexport class CreatePostDto {\n  @IsString()\n  @MinLength(3, { message: 'Title must be at least 5 characters long' })\n  title: string;\n\n  @IsEnum(PostType, { message: 'Invalid post type' })\n  postType: PostType;\n\n  @IsString()\n  slug: string;\n\n  @IsEnum(PostStatus, { message: 'Invalid post status' })\n  status: PostStatus;\n\n  @IsString()\n  @IsOptional()\n  content?: string;\n\n  @IsString()\n  @IsOptional()\n  schema?: string;\n\n  @IsString()\n  @IsOptional()\n  featuredImageUrl?: string;\n\n  @IsISO8601({\n  })  \n  @IsOptional()\n  publishedOn?: Date;\n\n  @IsArray()\n  @IsOptional()\n  tags?: string[];\n\n  @IsOptional()\n  @IsArray()\n  @ValidateNested({ each: true })\n  @Type(() => CreatePostMetaOptionsDto)\n  metaOptions: CreatePostMetaOptionsDto[];\n}",
+            "displayName": "CreatePostDto",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [
+                {
+                    "name": "content",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": true,
+                    "description": "",
+                    "line": 31,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "featuredImageUrl",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": true,
+                    "description": "",
+                    "line": 39,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "metaOptions",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "CreatePostMetaOptionsDto[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 54,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsArray",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "ValidateNested",
+                            "stringifiedArguments": "{each: true}"
+                        },
+                        {
+                            "name": "Type",
+                            "stringifiedArguments": "undefined"
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171,
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "postType",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "PostType",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsEnum",
+                            "stringifiedArguments": "PostType, {message: 'Invalid post type'}"
+                        }
+                    ],
+                    "modifierKind": [
+                        171
+                    ]
+                },
+                {
+                    "name": "publishedOn",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Date",
+                    "indexKey": "",
+                    "optional": true,
+                    "description": "",
+                    "line": 44,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsISO8601",
+                            "stringifiedArguments": "{}"
+                        },
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "schema",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": true,
+                    "description": "",
+                    "line": 35,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "slug",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 24,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171
+                    ]
+                },
+                {
+                    "name": "status",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "PostStatus",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 27,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsEnum",
+                            "stringifiedArguments": "PostStatus, {message: 'Invalid post status'}"
+                        }
+                    ],
+                    "modifierKind": [
+                        171
+                    ]
+                },
+                {
+                    "name": "tags",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": true,
+                    "description": "",
+                    "line": 48,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsArray",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "title",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "MinLength",
+                            "stringifiedArguments": "3, {message: 'Title must be at least 5 characters long'}"
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "CreatePostMetaOptionsDto",
+            "id": "class-CreatePostMetaOptionsDto-0b6582f7e2d481bc2cddf0e0f4e78e6dc02349153c4246e9fbc86df50f8223d383e06f3d5fd799282d4364f61e25b35774df75bd928786aa85c5b96fb960fe53",
+            "file": "src/posts/dtos/posts.dto.ts",
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { IsEnum, IsOptional, IsString, MinLength, IsISO8601, IsNotEmpty, IsArray, ValidateNested } from 'class-validator';\nimport { PostStatus, PostType } from '../enums/posts.enum.js';\nimport { Type } from 'class-transformer';\n\nclass CreatePostMetaOptionsDto {\n  @IsNotEmpty()\n  @IsString()\n  key: string;\n\n  @IsNotEmpty()\n  @IsString()\n  value: string;\n}\n\nexport class CreatePostDto {\n  @IsString()\n  @MinLength(3, { message: 'Title must be at least 5 characters long' })\n  title: string;\n\n  @IsEnum(PostType, { message: 'Invalid post type' })\n  postType: PostType;\n\n  @IsString()\n  slug: string;\n\n  @IsEnum(PostStatus, { message: 'Invalid post status' })\n  status: PostStatus;\n\n  @IsString()\n  @IsOptional()\n  content?: string;\n\n  @IsString()\n  @IsOptional()\n  schema?: string;\n\n  @IsString()\n  @IsOptional()\n  featuredImageUrl?: string;\n\n  @IsISO8601({\n  })  \n  @IsOptional()\n  publishedOn?: Date;\n\n  @IsArray()\n  @IsOptional()\n  tags?: string[];\n\n  @IsOptional()\n  @IsArray()\n  @ValidateNested({ each: true })\n  @Type(() => CreatePostMetaOptionsDto)\n  metaOptions: CreatePostMetaOptionsDto[];\n}",
+            "displayName": "CreatePostMetaOptionsDto",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [
+                {
+                    "name": "key",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 8,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsNotEmpty",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "value",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsNotEmpty",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "CreateUserDto",
+            "id": "class-CreateUserDto-42686bb30d4c6b95ff2bd167770e22a725e6fd2c80f7c68ad1cf3be726a77af0d7b74a3c11e79e895c1dd850a9ba6cf45375379da435c07c69f6fd273e3900a3",
+            "file": "src/users/dtos/create-user.dto.ts",
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { IsEmail, IsOptional, IsString, Matches, MinLength } from \"class-validator\";\nimport {ApiProperty, ApiPropertyOptional} from '@nestjs/swagger';\n\nexport class CreateUserDto { \n\n  @IsString()\n  @MinLength(3, { message: 'First name must be at least 3 characters long' })\n  firstName: string;\n\n  @IsString()\n  @IsOptional()\n  @MinLength(2, { message: 'Last name must be at least 3 characters long' })\n  lastName: string;\n\n  @IsEmail({},{ message: 'Please enter a valid email address' })\n  email: string;\n\n  @IsString()\n  @MinLength(8, { message: 'Password must be at least 8 characters long' })\n  @Matches(/^(?:[\\s\\S]{0,7}|(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,})$/, { message: 'Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character' })\n  password: string;\n}",
+            "displayName": "CreateUserDto",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [
+                {
+                    "name": "email",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsEmail",
+                            "stringifiedArguments": "{}, {message: 'Please enter a valid email address'}"
+                        }
+                    ],
+                    "modifierKind": [
+                        171
+                    ]
+                },
+                {
+                    "name": "firstName",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 8,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "MinLength",
+                            "stringifiedArguments": "3, {message: 'First name must be at least 3 characters long'}"
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "lastName",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "MinLength",
+                            "stringifiedArguments": "2, {message: 'Last name must be at least 3 characters long'}"
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "password",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "MinLength",
+                            "stringifiedArguments": "8, {message: 'Password must be at least 8 characters long'}"
+                        },
+                        {
+                            "name": "Matches",
+                            "stringifiedArguments": "/^(?:[\\s\\S]{0,7}|(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,})$/, {message: 'Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character'}"
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171,
+                        171
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "GetUsersParamDto",
+            "id": "class-GetUsersParamDto-39383be4c3eed18189b4e420bac5ef171c9aa56ba7e35110ec25009957d23d603714bd0eeaf9b01652a23deb92d4fce98dca9f5441827485e4aad0e3d810d465",
+            "file": "src/users/dtos/get-users-param.dto.ts",
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import {IsOptional, IsString, IsInt } from 'class-validator';\nimport {Type} from 'class-transformer';\n\nexport class GetUsersParamDto {\n  @Type(() => Number)\n  @IsInt()\n  @IsOptional({message: 'ID is optional'})\n  id?: number;\n\n  @IsString()\n  name: string;\n}\n\nexport class GetUsersQueryDto {\n  @IsOptional()\n  @IsInt()\n  @Type(() => Number)\n  age: number;\n}\n",
+            "displayName": "GetUsersParamDto",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [
+                {
+                    "name": "id",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": true,
+                    "description": "",
+                    "line": 8,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "Type",
+                            "stringifiedArguments": "undefined"
+                        },
+                        {
+                            "name": "IsInt",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": "{message: 'ID is optional'}"
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171,
+                        171
+                    ]
+                },
+                {
+                    "name": "name",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsString",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        171
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "GetUsersQueryDto",
+            "id": "class-GetUsersQueryDto-39383be4c3eed18189b4e420bac5ef171c9aa56ba7e35110ec25009957d23d603714bd0eeaf9b01652a23deb92d4fce98dca9f5441827485e4aad0e3d810d465",
+            "file": "src/users/dtos/get-users-param.dto.ts",
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import {IsOptional, IsString, IsInt } from 'class-validator';\nimport {Type} from 'class-transformer';\n\nexport class GetUsersParamDto {\n  @Type(() => Number)\n  @IsInt()\n  @IsOptional({message: 'ID is optional'})\n  id?: number;\n\n  @IsString()\n  name: string;\n}\n\nexport class GetUsersQueryDto {\n  @IsOptional()\n  @IsInt()\n  @Type(() => Number)\n  age: number;\n}\n",
+            "displayName": "GetUsersQueryDto",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [
+                {
+                    "name": "age",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18,
+                    "rawdescription": "\n",
+                    "decorators": [
+                        {
+                            "name": "IsOptional",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "IsInt",
+                            "stringifiedArguments": ""
+                        },
+                        {
+                            "name": "Type",
+                            "stringifiedArguments": "undefined"
+                        }
+                    ],
+                    "modifierKind": [
+                        171,
+                        171,
+                        171
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "UpdateAnimalDto",
+            "id": "class-UpdateAnimalDto-85c44751d714b6f977d178034f95294fb4fed119006a158d163704ebe5ebdb39d7cce54435d75eccd1b508f4d093a74f24e30ad6777ab1220f15ee74107a1e59",
+            "file": "src/animals/dto/update-animal.dto.ts",
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { PartialType } from '@nestjs/swagger';\nimport { CreateAnimalDto } from './create-animal.dto.js';\n\nexport class UpdateAnimalDto extends PartialType(CreateAnimalDto) {}\n",
+            "displayName": "UpdateAnimalDto",
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [
+                "PartialType(CreateAnimalDto)"
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": [
+                    {
+                        "name": "PartialType(CreateAnimalDto)",
+                        "type": "class"
+                    }
+                ]
+            }
+        }
+    ],
+    "directives": [],
+    "components": [],
+    "modules": [
+        {
+            "name": "AdminModule",
+            "id": "module-AdminModule-26b1bb671273cbe43b7bba949356895be995af3c8712bda9710ba00dbbde3bd4ae66597793dad5ee44baea72a6d7c7ba2f110bfb0521589ff70a45ccacdf0a25",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/admin/admin.module.ts",
+            "methods": [],
+            "sourceCode": "import { Module } from '@nestjs/common';\nimport { AdminService } from './admin.service.js';\nimport { AdminController } from './admin.controller.js';\n@Module({\n  providers: [AdminService],\n  exports: [AdminService],\n  controllers: [AdminController],\n})\nexport class AdminModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "AdminService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "AdminService"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AnimalsModule",
+            "id": "module-AnimalsModule-e129c815a2f33326ec5f50f43849f85a172ecfaa7b60893cb23780c6d0c6cee550553c7f986e0e71e04a680bd3d7d7955dfbbd24f76b31f2a7fd9385df125d06",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/animals/animals.module.ts",
+            "methods": [],
+            "sourceCode": "import { Module } from '@nestjs/common';\nimport { AnimalsService } from './animals.service.js';\nimport { AnimalsController } from './animals.controller.js';\n\n@Module({\n  controllers: [AnimalsController],\n  providers: [AnimalsService],\n})\nexport class AnimalsModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "AnimalsService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AnotherModule",
+            "id": "module-AnotherModule-056f1153b99817c56557171124c1b6540728ad5c9e6107fe4ad41dce5d50732fac910f6607a6fb4126ffb236b98ce2ce3b15e2535e2a2ed0c1c1f9e01d401be5",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/another/another.module.ts",
+            "methods": [],
+            "sourceCode": "import { Module } from '@nestjs/common';\nimport { AnotherService } from './another.service.js';\nimport { AdminService } from '../admin/admin.service.js';\nimport { AnotherController } from './another.controller.js';\nimport { AdminModule } from '../admin/admin.module.js';\n\n@Module({\n  imports: [AdminModule],\n  providers: [AnotherService],\n  controllers: [AnotherController],\n})\nexport class AnotherModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "AnotherService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AdminModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-855990babfaf8a387c7c00bd9b9a5e7f2c89b37371437cc59fe363f98003a825be318ceebf98fae4534ba740cf0a4314823a8adce442a23988092e6506b266a3",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { Module } from '@nestjs/common';\nimport { AppController } from './app.controller.js';\nimport { AppService } from './app.service.js';\nimport { UsersModule } from './users/users.module.js';\nimport { AnotherModule } from './another/another.module.js';\nimport { AdminModule } from './admin/admin.module.js';\nimport { AnimalsModule } from './animals/animals.module.js';\nimport { PostsModule } from './posts/posts.module.js';\n\n@Module({\n  imports: [\n    UsersModule,\n    AnotherModule,\n    AdminModule,\n    AnimalsModule,\n    PostsModule,\n  ],\n  controllers: [AppController],\n  providers: [AppService],\n})\nexport class AppModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "AppService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AdminModule"
+                        },
+                        {
+                            "name": "AnimalsModule"
+                        },
+                        {
+                            "name": "AnotherModule"
+                        },
+                        {
+                            "name": "PostsModule"
+                        },
+                        {
+                            "name": "UsersModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "PostsModule",
+            "id": "module-PostsModule-dfd54f52ed5e9c4ffb2c6467e910de842a39af1496e6efc17e998d84229f6936972170750d116f840e58bf779dadd105a01d94e483bd3f02cbdfb84335b3445b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/posts/posts.module.ts",
+            "methods": [],
+            "sourceCode": "import { Module } from '@nestjs/common';\nimport { PostsService } from './posts.service.js';\nimport { PostsController } from './posts.controller.js';\n\n@Module({\n  controllers: [PostsController],\n  providers: [PostsService],\n})\nexport class PostsModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "PostsService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UsersModule",
+            "id": "module-UsersModule-917235b9f84ecf4cabf72b86955d481719f1b4eade495569ce786ad74625e77c9d436d9e9671771b24166983e5b341a1aa652c007559a116137da3015c2fdb5f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/users/users.module.ts",
+            "methods": [],
+            "sourceCode": "import { Module } from '@nestjs/common';\nimport { UsersService } from './users.service.js';\nimport { UsersController } from './users.controller.js';\nimport { AdminModule } from '../admin/admin.module.js';\n\n@Module({\n  controllers: [UsersController],\n  imports: [AdminModule],\n  providers: [UsersService],\n})\nexport class UsersModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "UsersService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AdminModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [],
+        "functions": [
+            {
+                "name": "bootstrap",
+                "file": "src/main.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "displayName": "bootstrap",
+                "args": []
+            }
+        ],
+        "typealiases": [],
+        "enumerations": [
+            {
+                "name": "PostStatus",
+                "childs": [
+                    {
+                        "name": "DRAFT",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "draft"
+                    },
+                    {
+                        "name": "PUBLISHED",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "published"
+                    },
+                    {
+                        "name": "ARCHIVED",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "archived"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "file": "src/posts/enums/posts.enum.ts"
+            },
+            {
+                "name": "PostType",
+                "childs": [
+                    {
+                        "name": "POST",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "post"
+                    },
+                    {
+                        "name": "PAGE",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "page"
+                    },
+                    {
+                        "name": "STORY",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "story"
+                    },
+                    {
+                        "name": "SERIES",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "series"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "file": "src/posts/enums/posts.enum.ts"
+            }
+        ],
+        "groupedVariables": {},
+        "groupedFunctions": {
+            "src/main.ts": [
+                {
+                    "name": "bootstrap",
+                    "file": "src/main.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "displayName": "bootstrap",
+                    "args": []
+                }
+            ]
+        },
+        "groupedEnumerations": {
+            "src/posts/enums/posts.enum.ts": [
+                {
+                    "name": "PostStatus",
+                    "childs": [
+                        {
+                            "name": "DRAFT",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "draft"
+                        },
+                        {
+                            "name": "PUBLISHED",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "published"
+                        },
+                        {
+                            "name": "ARCHIVED",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "archived"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "file": "src/posts/enums/posts.enum.ts"
+                },
+                {
+                    "name": "PostType",
+                    "childs": [
+                        {
+                            "name": "POST",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "post"
+                        },
+                        {
+                            "name": "PAGE",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "page"
+                        },
+                        {
+                            "name": "STORY",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "story"
+                        },
+                        {
+                            "name": "SERIES",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "series"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "file": "src/posts/enums/posts.enum.ts"
+                }
+            ]
+        },
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "children": []
+    },
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/admin/admin.controller.ts",
+                "type": "controller",
+                "linktype": "controller",
+                "name": "AdminController",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/admin/admin.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AdminService",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/animals/animals.controller.ts",
+                "type": "controller",
+                "linktype": "controller",
+                "name": "AnimalsController",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/animals/animals.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AnimalsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/animals/dto/create-animal.dto.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "CreateAnimalDto",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/animals/dto/update-animal.dto.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "UpdateAnimalDto",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/animals/entities/animal.entity.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "Animal",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/another/another.controller.ts",
+                "type": "controller",
+                "linktype": "controller",
+                "name": "AnotherController",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/another/another.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AnotherService",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app.controller.ts",
+                "type": "controller",
+                "linktype": "controller",
+                "name": "AppController",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AppService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/main.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "bootstrap",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/posts/dtos/posts.dto.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "CreatePostDto",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/posts/dtos/posts.dto.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "CreatePostMetaOptionsDto",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/posts/posts.controller.ts",
+                "type": "controller",
+                "linktype": "controller",
+                "name": "PostsController",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/posts/posts.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "PostsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/users/dtos/create-user.dto.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "CreateUserDto",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/users/dtos/get-users-param.dto.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "GetUsersParamDto",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/users/dtos/get-users-param.dto.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "GetUsersQueryDto",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/users/users.controller.ts",
+                "type": "controller",
+                "linktype": "controller",
+                "name": "UsersController",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/users/users.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "UsersService",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            }
+        ]
+    }
+}

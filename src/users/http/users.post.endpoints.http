@@ -5,5 +5,5 @@ CONTENT-TYPE: application/json
     "firstName": "John Doe",
     "lastName": "Doe",
     "email": "john.doe@example.com",
-    "password": "123!dasdsadasdasdas"
+    "password": "123!dasdsadasdasdasA"
 }

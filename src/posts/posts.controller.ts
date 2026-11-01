@@ -1,4 +1,4 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Patch, Post } from '@nestjs/common';
 import { PostsService } from './posts.service.js';
 import { CreatePostDto } from './dtos/posts.dto.js';
 
@@ -6,8 +6,13 @@ import { CreatePostDto } from './dtos/posts.dto.js';
 export class PostsController {
   constructor(private readonly postsService: PostsService) {}
 
-  @Post()
+  @Post('create-post')
   createPost(@Body() createPostDto: CreatePostDto) {
-    return 'post created';
+    return this.postsService.createPost(createPostDto);
+  }
+
+  @Patch()
+  updatePost(@Body() updatePostDto: CreatePostDto) {
+    return 'post updated';
   }
 }

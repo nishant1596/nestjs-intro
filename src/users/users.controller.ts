@@ -19,9 +19,8 @@ export class UsersController {
 
   @ApiTags('create-user')
   @Post('create-user')
-  create (@Body(new ValidationPipe()) createUserDto: CreateUserDto) {
-    console.log('Create User DTO request:', createUserDto);
-    return 'A new user is created'
+  createUser (@Body() createUserDto: CreateUserDto) {
+    this.usersService.createUser(createUserDto);
   }
   // @Get('{/:id}')
   // findOneById(@Param('id') id: string, @Query() query: any) {

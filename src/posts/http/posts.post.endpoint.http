@@ -1,0 +1,15 @@
+POST http://localhost:3000/posts/create-post
+CONTENT-TYPE: application/json
+
+{
+    "userId": 1,
+    "title": "My First Post",
+    "slug": "my-first-post",
+    "status": "published",
+    "postType": "post",
+    "content": "This is the content of my first post",
+    "schema": "my-post-schema",
+    "featuredImageUrl": "http://example.com/featured-image.jpg",
+    "publishedOn": "2023-01-01T00:00:00.000Z",
+    "tags": ["technology", "programming"]
+}

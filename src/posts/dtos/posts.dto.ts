@@ -13,6 +13,10 @@ class CreatePostMetaOptionsDto {
 }
 
 export class CreatePostDto {
+
+  @IsNotEmpty()
+  userId: number;
+
   @IsString()
   @MinLength(3, { message: 'Title must be at least 5 characters long' })
   title: string;
